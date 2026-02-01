@@ -594,18 +594,19 @@ export default function TradingAnalyzer() {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 14 }}>
-          <a href="https://vedictrades.blog/edgereport/" target="_blank" rel="noopener noreferrer"
+          <button type="button"
+            onClick={() => window.open("https://vedictrades.blog/edgereport/", "_blank", "noopener,noreferrer")}
             style={{
               display: "inline-flex", alignItems: "center", gap: 7,
-              padding: "8px 18px", borderRadius: 8, textDecoration: "none", fontSize: 12.5, fontWeight: 600,
-              color: C.accent, border: "1px solid rgba(99,102,241,0.3)",
-              background: "rgba(99,102,241,0.07)", transition: "background 0.2s",
+              padding: "8px 18px", borderRadius: 8, border: "1px solid rgba(99,102,241,0.3)",
+              background: "rgba(99,102,241,0.07)", color: C.accent,
+              fontSize: 12.5, fontWeight: 600, cursor: "pointer", transition: "background 0.2s",
             }}
             onMouseEnter={e => e.currentTarget.style.background = "rgba(99,102,241,0.14)"}
             onMouseLeave={e => e.currentTarget.style.background = "rgba(99,102,241,0.07)"}
           >
             <span style={{ fontSize: 13 }}>📚</span> How to Use
-          </a>
+          </button>
         </div>
 
         {loading && (
