@@ -409,7 +409,7 @@ function WinRateBar({ winRate }) {
       </div>
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: 5 }}>
         <span style={{ fontSize: 11, fontWeight: 700, color: winRate > 50 ? "#22c55e" : "#ef4444", fontFamily: "monospace" }}>{winRate.toFixed(1)}%</span>
-        <span style={{ fontSize: 10, color: "#444" }}>need >50% to be profitable</span>
+        <span style={{ fontSize: 10, color: "#444" }}>{"need >50% to be profitable"}</span>
       </div>
     </div>
   );
